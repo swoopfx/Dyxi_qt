@@ -1,1 +1,6 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/">
+        <file>Main.ui.qml</file>
+        <file>Artboard 1.png</file>
+    </qresource>
+</RCC>
