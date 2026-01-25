@@ -19,6 +19,13 @@ qt_add_qml_module(appDyxi1
         RESOURCES images.qrc
         RESOURCES lib.qrc
         RESOURCES javascript.qrc
+        QML_FILES
+        QML_FILES Lib/Board.qml
+        QML_FILES Lib/Pages/ScrachPad.qml
+        QML_FILES Lib/Pages/Dashboard.qml
+        QML_FILES Lib/Pages/Welcome.qml
+        QML_FILES Lib/Pages/HomeForm.qml
+        QML_FILES Lib/Snippets/Drawer.qml
 )
 
 qt_add_resources(appDyxi1

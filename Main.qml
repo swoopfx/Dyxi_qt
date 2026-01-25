@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Window
+import "Lib"
 // Item {
 //     id: main_root
 //     width: 640
@@ -8,7 +9,7 @@ import QtQuick.Window
 //     visible: true
     // title: qsTr("Hello World")
 
-    ApplicationWindow {
+    Window {
         id: main_window
         visible: true
         width: 640
@@ -21,8 +22,8 @@ import QtQuick.Window
         property int screen_maximumWidth: 1024
         readonly property real aspectRatio: 4.0/3.0
 
-        maximumHeight: Screen.desktopAvailaleHeight
-        maximumWidth: Screen.desktopAvailaleWidth
+        // maximumHeight: Screen.desktopAvailaleHeight
+        // maximumWidth: Screen.desktopAvailaleWidth
 
         minimumHeight: main_window.screen_maximumHeight
         minimumWidth: main_window.screen_maximumWidth
@@ -38,6 +39,10 @@ import QtQuick.Window
             if(visibility === Window.Windowed){
                 width = height * aspectRatio
             }
+        }
+        Board{
+
+
         }
 
         Image {
