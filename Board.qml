@@ -3,7 +3,7 @@ import QtQuick.Controls 2.5
 import QtQuick.Window
 
 ApplicationWindow {
-    id: main_window
+    id: board_window
     visible: true
     width: 640
     height: 480
