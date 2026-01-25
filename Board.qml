@@ -1,5 +1,6 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.5
+import QtQuick.Window
 
 ApplicationWindow {
     id: main_window
@@ -12,8 +13,8 @@ ApplicationWindow {
     property int screen_maximumHeight: 768
     property int screen_maximumWidth: 1024
 
-    maximumHeight: main_window.screen_maximumHeight
-    maximumWidth: main_window.screen_maximumWidth
+    maximumHeight: Screen.desktopAvailaleHeight
+    maximumWidth: Screen.desktopAvailaleWidth
 
     minimumHeight: main_root.screen_maximumHeight
     minimumWidth: main_root.screen_maximumWidth
