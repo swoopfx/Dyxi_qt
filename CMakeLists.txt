@@ -15,14 +15,10 @@ qt_add_executable(appDyxi1
 qt_add_qml_module(appDyxi1
     URI Dyxi1
     QML_FILES
-
+        Main.qml
         RESOURCES images.qrc
         RESOURCES lib.qrc
-
         RESOURCES javascript.qrc
-        QML_FILES Ect.qml
-        QML_FILES Lib/Board.qml
-        QML_FILES Lib/Pages/ScrachPad.qml
 )
 
 qt_add_resources(appDyxi1
