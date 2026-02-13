@@ -4,7 +4,7 @@ project(Dyxi1 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2)
+find_package(Qt6 REQUIRED COMPONENTS Core Quick QuickControls2)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -26,6 +26,10 @@ qt_add_qml_module(appDyxi1
         QML_FILES Lib/Pages/Welcome.qml
         QML_FILES Lib/Pages/HomeForm.qml
         QML_FILES Lib/Snippets/Drawer.qml
+        QML_FILES Lib/Pages/Login.qml
+        QML_FILES Test.qml
+        QML_FILES Ano.qml
+
 )
 
 qt_add_resources(appDyxi1
