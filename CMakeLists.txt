@@ -29,6 +29,7 @@ qt_add_qml_module(appDyxi1
         QML_FILES Lib/Pages/Login.qml
         QML_FILES Test.qml
         QML_FILES Ano.qml
+        QML_FILES Lib/Buttons/PulseButton.qml
 
 )
 
