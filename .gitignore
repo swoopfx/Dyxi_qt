@@ -36,7 +36,7 @@ Thumbs.db
 /.qmake.stash
 
 .env
-Lib/src/core/AllString.h
+/Lib/src/core/AllString.h
 
 # qtcreator generated files
 *.pro.user*

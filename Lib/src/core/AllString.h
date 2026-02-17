@@ -15,6 +15,10 @@ const QString baseUrl=QStringLiteral("https://dyxi.site");
 const QString dyxiApiLogin = baseUrl+QStringLiteral("/api/login");
 const QString dyxiApiregistration = baseUrl+ QStringLiteral("/api/register");
 
+
+// Configuration
+const QString mysqlDatabaseHost = QStringLiteral("localhost");
+
 }
 
 #endif // ALLSTRING_H
