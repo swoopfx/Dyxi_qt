@@ -30,6 +30,13 @@ qt_add_qml_module(appDyxi1
         QML_FILES Test.qml
         QML_FILES Ano.qml
         QML_FILES Lib/Buttons/PulseButton.qml
+        RESOURCES Welcome.png
+        SOURCES Lib/src/LoadConfig.h Lib/src/LoadConfig.cpp
+        SOURCES
+        SOURCES
+        SOURCES Lib/src/Auth.h Lib/src/Auth.cpp
+        SOURCES Lib/src/core/settings.h Lib/src/core/settings.cpp
+        SOURCES Lib/src/core/errorreporter.h Lib/src/core/errorreporter.cpp
 
 )
 
@@ -37,6 +44,7 @@ qt_add_resources(appDyxi1
     "assets"
      PREFIX "/"
      FILES "Artboard 1.png"
+     FILES "Welcome.png"
  )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

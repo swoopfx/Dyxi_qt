@@ -16,7 +16,7 @@ Page {
     // title: qsTr("Home")
     Image {
         id: bg_image
-        source: "qrc:/Artboard 1.png"
+        source: "qrc:/Welcome.png"
         fillMode: Image.Stretch
         anchors.fill: parent
     }
