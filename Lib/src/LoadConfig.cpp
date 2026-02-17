@@ -1,6 +1,6 @@
 #include "LoadConfig.h"
 
-LoadConfig::LoadConfig(QObject *parent)
+LoadConfig::LoadConfig()
 {}
 
 void LoadConfig::loadEnvFile(QString &filePath)

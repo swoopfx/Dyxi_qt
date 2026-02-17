@@ -1,16 +1,29 @@
 #ifndef AUTH_H
 #define AUTH_H
 
-#include <QAbstractItemModel>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include "LoadConfig.h"
+#include "core/errorreporter.h"
+
 
 class Auth : public QObject
 {
     Q_OBJECT
 
+    QString jwt_token;
+    QNetworkAccessManager *manager;
+    LoadConfig config;
+    ErrorReporter *errorReporter;
+
+
 public:
     explicit Auth(QObject *parent = nullptr);
 
-    bool login();
+    void login(QString &, QString &);
     bool isActive();
     void confirmEmail();
     void resetPassword();
@@ -26,6 +39,7 @@ public:
     // QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
 
 private:
+
     void getActiveToken();
     void getRefreshToken();
     void refreshToken();

@@ -37,6 +37,7 @@ qt_add_qml_module(appDyxi1
         SOURCES Lib/src/Auth.h Lib/src/Auth.cpp
         SOURCES Lib/src/core/settings.h Lib/src/core/settings.cpp
         SOURCES Lib/src/core/errorreporter.h Lib/src/core/errorreporter.cpp
+        SOURCES Lib/src/core/AllString.h
 
 )
 

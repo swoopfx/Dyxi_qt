@@ -7,6 +7,11 @@
 #include <QTextStream>
 #include <QProcessEnvironment>
 
+/**
+ * @brief The LoadConfig class
+ * @details used to load the .env files holding sentitive information
+ *
+ */
 class LoadConfig
 {
 
@@ -20,4 +25,4 @@ private:
 };
 
 #endif // LOADCONFIG_H
-g
+

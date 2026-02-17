@@ -9,6 +9,9 @@ Page {
 
     width: dashboard.board_width
     height: dashboard.board_height
+    Connections{
+
+    }
 
     // title: qsTr("Home")
     Image {

@@ -4,7 +4,7 @@
 #include <QAbstractItemModel>
 #include <QSettings>
 
-#include "Lib/src/LoadConfig.h"
+#include "../LoadConfig.h"
 
 class Settings : public QObject
 {
