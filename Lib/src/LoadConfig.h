@@ -16,10 +16,8 @@ public:
 
     void loadEnvFile(QString&);
 
-
-
-
 private:
 };
 
 #endif // LOADCONFIG_H
+g
